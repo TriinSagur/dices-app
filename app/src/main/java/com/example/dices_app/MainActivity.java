@@ -1,12 +1,14 @@
 package com.example.dices_app;
+
 import android.os.Bundle;
-//import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.dices_app.R;
 
 import java.util.Random;
 
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onAnimationEnd(Animation animation) {
                         int value = randomDiceValue();
-                        int res = getResources().getIdentifier("dice_" + value, "drawable", "com.examples.dices_app");
+                        int res = getResources().getIdentifier("dice_" + value, "drawable", "com.example.dices_app");
 
                         if (animation == anim1) {
                             imageView1.setImageResource(res);
