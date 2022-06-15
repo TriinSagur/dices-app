@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onAnimationEnd(Animation animation) {
                         int value = randomDiceValue();
-                        int res = getResources().getIdentifier("dice_" + value, "drawable", "com.ssaurel.dicer");
+                        int res = getResources().getIdentifier("dice_" + value, "drawable", "com.examples.dices_app");
 
                         if (animation == anim1) {
                             imageView1.setImageResource(res);
