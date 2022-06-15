@@ -9,9 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Dicesapp">
-        <meta-data
-                android:name="com.google.android.actions"
-                android:resource="@xml/shake.xml"/>
+
 
         <activity
                 android:name=".MainActivity"
